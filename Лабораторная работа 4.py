@@ -91,12 +91,12 @@ if __name__ == "__main__":
 
         @property
         def slices(self) -> int:
-            """"Возвращает время доставки."""
+            """"Возвращает количество кусочков."""
             return self.slices
 
         @slices.setter
         def population(self, how_many: int) -> None:
-            """"Устанавливает количество кусочков пиццы"""
+            """"Устанавливает новое количество кусочков пиццы"""
             if isinstance(how_many, int):
                 if how_many > 0:
                     self.slices = how_many
